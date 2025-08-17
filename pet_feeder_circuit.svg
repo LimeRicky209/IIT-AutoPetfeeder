@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">Automated Pet Feeder - Circuit Diagram</text>
+  
+  <!-- Microcontroller (Central Unit) -->
+  <rect x="500" y="300" width="200" height="120" fill="#3498db" stroke="#2980b9" stroke-width="3" rx="10"/>
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">MICROCONTROLLER</text>
+  <text x="600" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">(Arduino/ESP32)</text>
+  <text x="600" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• System Logic</text>
+  <text x="600" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Decision Making</text>
+  <text x="600" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Data Logging</text>
+  <text x="600" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">• Time Management</text>
+  
+  <!-- Power Supply -->
+  <rect x="50" y="50" width="120" height="80" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+  <text x="110" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">POWER</text>
+  <text x="110" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">SUPPLY</text>
+  <text x="110" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">12V/5V</text>
+  <text x="110" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Adapter</text>
+  
+  <!-- Input Sensors -->
+  <!-- RTC Clock -->
+  <rect x="50" y="200" width="100" height="60" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="5"/>
+  <text x="100" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">RTC CLOCK</text>
+  <text x="100" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Time Check</text>
+  <text x="100" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">DS3231</text>
+  
+  <!-- Food Level Sensor -->
+  <rect x="50" y="300" width="100" height="60" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="5"/>
+  <text x="100" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="white">FOOD LEVEL</text>
+  <text x="100" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Ultrasonic</text>
+  <text x="100" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">HC-SR04</text>
+  
+  <!-- RFID Reader -->
+  <rect x="50" y="400" width="100" height="60" fill="#2ecc71" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="100" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">RFID</text>
+  <text x="100" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Pet ID Check</text>
+  <text x="100" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">RC522</text>
+  
+  <!-- Weight Sensor -->
+  <rect x="50" y="500" width="100" height="60" fill="#34495e" stroke="#2c3e50" stroke-width="2" rx="5"/>
+  <text x="100" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">WEIGHT</text>
+  <text x="100" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Load Cell</text>
+  <text x="100" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">HX711</text>
+  
+  <!-- Output Devices -->
+  <!-- Servo Motor -->
+  <rect x="800" y="200" width="100" height="60" fill="#e67e22" stroke="#d35400" stroke-width="2" rx="5"/>
+  <text x="850" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">SERVO</text>
+  <text x="850" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Food Gate</text>
+  <text x="850" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">SG90</text>
+  
+  <!-- LCD Display -->
+  <rect x="800" y="300" width="100" height="60" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="5"/>
+  <text x="850" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">LCD</text>
+  <text x="850" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Status Display</text>
+  <text x="850" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">16x2</text>
+  
+  <!-- Buzzer -->
+  <rect x="800" y="400" width="100" height="60" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+  <text x="850" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">BUZZER</text>
+  <text x="850" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Alert System</text>
+  <text x="850" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Passive</text>
+  
+  <!-- LED Indicators -->
+  <rect x="800" y="500" width="100" height="60" fill="#f1c40f" stroke="#f39c12" stroke-width="2" rx="5"/>
+  <text x="850" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">LEDs</text>
+  <text x="850" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Status Lights</text>
+  <text x="850" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">RGB</text>
+  
+  <!-- WiFi Module -->
+  <rect x="1000" y="300" width="120" height="80" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="5"/>
+  <text x="1060" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">WiFi MODULE</text>
+  <text x="1060" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Remote Monitoring</text>
+  <text x="1060" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Data Logging</text>
+  <text x="1060" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">ESP8266</text>
+  
+  <!-- Connection Lines -->
+  <!-- Power connections -->
+  <line x1="170" y1="90" x2="500" y2="90" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="90" x2="500" y2="300" stroke="#e74c3c" stroke-width="3"/>
+  <text x="300" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">POWER BUS</text>
+  
+  <!-- Input connections -->
+  <line x1="150" y1="230" x2="500" y2="320" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="330" x2="500" y2="340" stroke="#f39c12" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="430" x2="500" y2="360" stroke="#2ecc71" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="150" y1="530" x2="500" y2="380" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Output connections -->
+  <line x1="700" y1="320" x2="800" y2="230" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="340" x2="800" y2="330" stroke="#3498db" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="360" x2="800" y2="430" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="380" x2="800" y2="530" stroke="#f1c40f" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="360" x2="1000" y2="340" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Logic Flow Diagram -->
+  <rect x="250" y="600" width="700" height="180" fill="none" stroke="#34495e" stroke-width="2" rx="10"/>
+  <text x="600" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">SYSTEM LOGIC FLOW</text>
+  
+  <!-- Flow boxes -->
+  <rect x="270" y="640" width="80" height="30" fill="#3498db" stroke="#2980b9" stroke-width="1" rx="3"/>
+  <text x="310" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Power ON?</text>
+  
+  <rect x="370" y="640" width="80" height="30" fill="#f39c12" stroke="#e67e22" stroke-width="1" rx="3"/>
+  <text x="410" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Food Available?</text>
+  
+  <rect x="470" y="640" width="80" height="30" fill="#9b59b6" stroke="#8e44ad" stroke-width="1" rx="3"/>
+  <text x="510" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Scheduled Time?</text>
+  
+  <rect x="570" y="640" width="80" height="30" fill="#2ecc71" stroke="#27ae60" stroke-width="1" rx="3"/>
+  <text x="610" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Valid RFID?</text>
+  
+  <rect x="670" y="640" width="80" height="30" fill="#e67e22" stroke="#d35400" stroke-width="1" rx="3"/>
+  <text x="710" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Already Fed?</text>
+  
+  <rect x="370" y="690" width="80" height="30" fill="#34495e" stroke="#2c3e50" stroke-width="1" rx="3"/>
+  <text x="410" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Target Weight?</text>
+  
+  <rect x="470" y="690" width="80" height="30" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+  <text x="510" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Food Consumed?</text>
+  
+  <rect x="570" y="690" width="80" height="30" fill="#27ae60" stroke="#2ecc71" stroke-width="1" rx="3"/>
+  <text x="610" y="708" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Log Success</text>
+  
+  <!-- Flow arrows -->
+  <line x1="350" y1="655" x2="370" y2="655" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="655" x2="470" y2="655" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="655" x2="570" y2="655" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="655" x2="670" y2="655" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="710" y1="670" x2="710" y2="680" stroke="#333" stroke-width="1"/>
+  <line x1="710" y1="680" x2="410" y2="680" stroke="#333" stroke-width="1"/>
+  <line x1="410" y1="680" x2="410" y2="690" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="450" y1="705" x2="470" y2="705" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="705" x2="570" y2="705" stroke="#333" stroke-width="1" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">INPUTS</text>
+  <text x="950" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">OUTPUTS</text>
+  
+  <!-- Pin labels on microcontroller -->
+  <text x="480" y="320" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="white">D2-RTC</text>
+  <text x="480" y="335" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="white">D3-TRIG</text>
+  <text x="480" y="350" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="white">D4-ECHO</text>
+  <text x="480" y="365" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="white">D5-RFID</text>
+  <text x="480" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="8" fill="white">A0-WEIGHT</text>
+  
+  <text x="720" y="320" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="white">D6-SERVO</text>
+  <text x="720" y="335" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="white">D7-LCD</text>
+  <text x="720" y="350" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="white">D8-BUZZER</text>
+  <text x="720" y="365" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="white">D9-LED</text>
+  <text x="720" y="380" text-anchor="start" font-family="Arial, sans-serif" font-size="8" fill="white">D10-WiFi</text>
+</svg>
