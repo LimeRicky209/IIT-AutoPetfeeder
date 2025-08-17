@@ -1,0 +1,12 @@
+Animal Shelter Pet Feeding Problem Statement
+The current manual approach is time-intensive, error-prone, and prevents staff from focusing on other essential animal care activities. Staff need a low-cost, automated system that ensures the following core requirements:
+1.	The correct animal receives the right food type and portion size
+2.	Feeding occurs at the appropriate times
+3.	Comprehensive records are maintained
+4.	Food inventory can be planned effectively
+5.	Staff time is used efficiently
+Automated Pet Feeder Functional Requirements
+A.	Feeding Schedule: Define how often and how much food will be dispensed.
+B.	Portion Control: Determine how to measure and dispense specific amounts of food.
+C.	User Notifications: Implement alerts for low food levels or feeding status.
+D.	Pet Safety: the feeder system is safe for pets.
