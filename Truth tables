@@ -1,0 +1,53 @@
+C. Table: Boolean Conditions and Actions
+
+Step	Boolean Value	Action if True	Action if False
+System ON   	True/false	Continue	Turn On
+Food check 	Container full 
+true/false	Continue	Alert to refill
+Pet ID check 	Matched
+ true/false  	Continue	Stop 
+Alert manual match
+Time check  	Scheduled time confirmed
+true/false	Dispense	Stop 
+Wait PM feed 
+Dispensing 	Dispensing
+true/false	Motor on dispense portion	Alert
+manual dispense 
+Food consumed 	Plate empty 
+True/false 	Log and end	Alert 
+
+S= System on 
+F= Food level 
+P = Pet ID 
+T = Time Checked
+D= Dispensing
+C= Food consumed
+
+D. Truth Table 1= True 0=False
+ 
+F	P	T	D
+0	0	0	0
+0	0	1	0
+0	1	0	0
+0	1	1	0
+1	0	0	0
+1	0	1	0
+1	1	0	0
+1	1	1	1
+
+Expression D= F AND P AND T  
+
+
+Truth table Step 6. Confirm fed (C)
+
+D	B	C
+0	1	0
+1	0	1
+		
+		1
+
+Expression C= D AND B
+
+
+
+
