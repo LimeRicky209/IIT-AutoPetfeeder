@@ -1,0 +1,22 @@
+DECISION LOGIC CONDITIONS AND MODULAR SEQUENCE
+1.	Feeder is Full
+o	feederFull = true/false
+o	If feederFull == false, block dispensing and trigger refill alert.
+
+2.	Correct Time is Scheduled 
+o	if scheduledFeedingTime == true: proceed
+o	else: dispensing = false
+
+3.	Pet is Identified Electronically Pet Portion Matches Size, Age,
+o	petIdentified = true/false
+o	If petIdentified == false, do not proceed.
+
+4.	Feeder Releases Gate and Dispenses Food
+o	Action occurs if all above are true.
+
+5.	Confirm If Pet Has Eaten Food 
+o	foodEaten = true/false (detected by bowl weight change)
+o	If foodEaten == true, update petHasEaten to true for the next cycle.
+
+6. Post confirmation
+After feed confirmed, check if food storage is empty (if foodStorageEmpty == true: foodAvailable = false, then signal refill). May also add option to Repeat Cycle Loop or timer resets the “scheduled Feeding Time” for the next interval.
