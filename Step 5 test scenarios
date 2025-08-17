@@ -1,0 +1,10 @@
+functionality ID scan and weight sensor 
+ Pet identified/not identified 
+ Pet eats/doesn't eat monitoring
+ Food bin empty/full conditions
+ handling a Sensor disconnection 
+ testing the LED indicator 
+ Container full/empty 
+ recovery from Power failure 
+Motor jam detection
+timer failures
