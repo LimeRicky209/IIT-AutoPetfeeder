@@ -1,0 +1,33 @@
+Variables	Type	Value 	Units	Method
+INPUTS				
+Animal type 	discrete	Boolean	dog = 0
+cat = 1	RFID tag
+Pet ID	discrete	Boolean	True = 1
+False = 0	RFID tag
+Pet age	discrete	Boolean	Pup= 0
+Adult = 1	RFID tag
+Time: current	continuous	Date time	0-24hrs	Real-time clock
+Time: feeding schedule
+	discrete	Boolean	08:00AM
+18:00PM	clock
+Portion quantity 	discrete	Boolean	200 or 500 grams	Scale sensor
+food level of container
+	discrete	Boolean	True=1 
+False= 0	sensor
+bowl ready (empty)
+	discrete 	Boolean	True=1
+False= 0	sensor
+Manual feeding 	discrete	Boolean	ON=1
+NOT=0	Alert
+Motor controller 	discrete	Boolean	ON=1
+OFF=0	Servo led
+OUTPUTS				
+Dispensed (servo)	discrete	Boolean	Dispensing=1
+idle=0	ALERT LED 
+Low food Alert	discrete	Boolean	Alert= 1
+true/false=0	Buzzer alert
+Empty Bowl Alert	discrete	Boolean	Empty/true=1
+Filled/False=0	LED
+Feeding complete Alert	discrete	Boolean	Complete=1
+Dispensing=0	LED
+System status Alert	discrete	Boolean	ON/OFF	Buzzer Alert
