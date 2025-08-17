@@ -1,0 +1,29 @@
+The following data inputs, outputs and considerations were identified:
+
+1. Profile of pet and requirements
+•	Type of pet: (e.g., dog, cat etc.)
+•	Size, age of pet: (small, medium, large)
+•	Feeding schedule: times per day, portion size
+•	Food type: dry, wet food, pellets.
+2. Feeder Mechanism & Operation
+•	Dispensing method: gravity, motorised unit, rotary dispenser
+•	Portion control: fixed or adjustable servings. 
+•	Food storage capacity: volume needed between refills
+•	Power source: battery, USB, electricity, solar power.
+3. Control System
+•	Automation level: timer-based, sensor-based, remote-controlled 
+•	Sensors needed: scale/weight sensor, RFID sensor, food level detector
+•	User interface: buttons, LED display. 
+4. Manufacturing Assumptions and Cost Constraints
+•	Food-safe container: ensure materials are safe for pet food
+•	Manufacturing process: injection molding, 3D printing, assembly
+•	Estimated materials cost and availability of components
+•	Estimated maintenance ease and cost
+6. Safety & Reliability Assumptions
+•	Pet safety: avoid sharp edges, toxic materials, contamination
+•	Food freshness: airtight storage, moisture control
+•	Prevent jamming: mechanism to prevent food blockage
+7. Maintenance & Usability
+•	Ease of cleaning: removable parts, dishwasher-safe
+•	Refill frequency: how often staff need to add food
+•	Setup simplicity: easy use, minimal assembly
